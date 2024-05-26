@@ -1,8 +1,7 @@
-import type { Config } from "jest";
-import { defaults } from "jest-config";
-
-const config: Config = {
-  ...defaults,
+module.exports = {
+  testEnvironment: "jest-environment-jsdom",
+  setupFilesAfterEnv: ["<rootDir>/src/setupTests.ts"],
+  moduleNameMapper: {
+    "^@/(.*)$": "<rootDir>/src/$1",
+  },
 };
-
-export default config;
