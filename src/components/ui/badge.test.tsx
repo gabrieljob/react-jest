@@ -9,7 +9,7 @@ const variants: ("default" | "secondary" | "outline" | "destructive")[] = [
 ];
 
 describe("Badge", () => {
-  it.each(variants)("hould render component using %s variant", (variant) => {
+  it.each(variants)("should render component using %s variant", (variant) => {
     const text = "any_text";
     render(<Badge variant={variant}>{text}</Badge>);
 
