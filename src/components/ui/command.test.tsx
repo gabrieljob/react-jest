@@ -97,22 +97,18 @@ describe("Command", () => {
     expect(option).toHaveTextContent("Notification");
   });
 
-  it("should move between options using ctrl+k", async () => {
+  it("should move between options using ctrl+k", () => {
     render(renderComponent());
 
     const input = screen.getByRole("combobox");
 
-    await waitFor(() => {
-      fireEvent.keyDown(input, { key: "j", code: 74, ctrlKey: true });
-    });
+    fireEvent.keyDown(input, { key: "j", code: 74, ctrlKey: true });
 
     const notificationOption = screen.getByRole("option", { selected: true });
 
     expect(notificationOption).toHaveTextContent("Notification");
 
-    await waitFor(() => {
-      fireEvent.keyDown(input, { key: "k", code: 75, ctrlKey: true });
-    });
+    fireEvent.keyDown(input, { key: "k", code: 75, ctrlKey: true });
 
     const calendarOption = screen.getByRole("option", { selected: true });
 
