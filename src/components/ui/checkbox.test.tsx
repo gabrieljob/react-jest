@@ -2,7 +2,7 @@ import { fireEvent, render, screen } from "@testing-library/react";
 import { Checkbox } from "./checkbox";
 
 describe("Checkbox", () => {
-  it("should render component using variant", () => {
+  it("should render component", () => {
     render(<Checkbox />);
 
     const checkbox = screen.getByTestId("checkbox-testid");

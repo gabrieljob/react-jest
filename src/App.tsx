@@ -1,16 +1,27 @@
 import tasks from "./components/data/tasks";
-import { columns } from "./shared/columns";
-import { DataTable } from "./shared/data-table";
-
-export const metadata = {
-  title: "Tasks",
-  description: "A task and issue tracker build using Tanstack Table.",
-};
+import { columns } from "@/shared/columns";
+import { DataTable } from "@/shared/data-table";
+import {
+  CalendarIcon,
+  GearIcon,
+  ReaderIcon,
+  PersonIcon,
+  BellIcon,
+} from "@radix-ui/react-icons";
+import {
+  Command,
+  CommandEmpty,
+  CommandGroup,
+  CommandInput,
+  CommandItem,
+  CommandList,
+  CommandSeparator,
+} from "./components/ui/command";
 
 export default function App() {
   return (
     <>
-      <div className="md:hidden">
+      {/* <div className="md:hidden">
         <img
           src="/examples/tasks-light.png"
           width={1280}
@@ -34,10 +45,40 @@ export default function App() {
               Here&apos;s a list of your tasks for this month!
             </p>
           </div>
-          <div className="flex items-center space-x-2">{/* <UserNav /> */}</div>
         </div>
         <DataTable data={tasks} columns={columns} />
-      </div>
+      </div> */}
+      <Command className="rounded-lg border shadow-md">
+        <CommandInput placeholder="Type a command or search..." />
+        <CommandList>
+          <CommandEmpty>No results found.</CommandEmpty>
+          <CommandGroup heading="Suggestions">
+            <CommandItem>
+              <CalendarIcon className="mr-2 h-4 w-4" />
+              <span>Calendar</span>
+            </CommandItem>
+            <CommandItem>
+              <BellIcon className="mr-2 h-4 w-4" />
+              <span>Notification</span>
+            </CommandItem>
+          </CommandGroup>
+          <CommandSeparator />
+          <CommandGroup heading="Settings">
+            <CommandItem>
+              <PersonIcon className="mr-2 h-4 w-4" />
+              <span>Profile</span>
+            </CommandItem>
+            <CommandItem>
+              <ReaderIcon className="mr-2 h-4 w-4" />
+              <span>Billing</span>
+            </CommandItem>
+            <CommandItem>
+              <GearIcon className="mr-2 h-4 w-4" />
+              <span>Settings</span>
+            </CommandItem>
+          </CommandGroup>
+        </CommandList>
+      </Command>
     </>
   );
 }
