@@ -3,11 +3,11 @@ import { ColumnDef } from "@tanstack/react-table";
 import { Badge } from "@/components/ui/badge";
 import { Checkbox } from "@/components/ui/checkbox";
 
-import { labels, priorities, statuses } from "../components/data/data";
+import { labels, priorities, statuses } from "./data";
 
 import { Task } from "@/types/Task";
-import { DataTableColumnHeader } from "./data-table-column-header";
-import { DataTableRowActions } from "./data-table-row-actions";
+import { DataTableColumnHeader } from "../../shared/data-table-column-header";
+import { DataTableRowActions } from "../../shared/data-table-row-actions";
 
 export const columns: ColumnDef<Task>[] = [
   {
