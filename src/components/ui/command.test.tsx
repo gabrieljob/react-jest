@@ -62,7 +62,7 @@ const renderComponent = () => {
 };
 
 describe("Command", () => {
-  it("should render component using", () => {
+  it("should render component", () => {
     render(renderComponent());
 
     const command = screen.getByTestId("command-testid");
