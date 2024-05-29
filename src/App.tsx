@@ -1,5 +1,5 @@
 import tasks from "./components/data/tasks";
-import { columns } from "@/shared/columns";
+import { columns } from "@/components/data/columns";
 import { DataTable } from "@/shared/data-table";
 
 export default function App() {
