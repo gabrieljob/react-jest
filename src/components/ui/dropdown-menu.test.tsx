@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { Button } from "./button";
 import tasks from "../data/tasks";
-import { columns } from "@/shared/columns";
+import { columns } from "../data/columns";
 import { ColumnDef, useReactTable } from "@tanstack/react-table";
 import {
   DropdownMenu,
