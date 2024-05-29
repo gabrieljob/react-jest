@@ -12,11 +12,11 @@ describe("Input", () => {
   });
   it("should type anything on input type text", async () => {
     render(<Input />);
-
+    const text = "any_text";
     const input = screen.getByTestId("input-testid");
-    await userEvent.type(input, "any_text");
+    await userEvent.type(input, text);
 
-    expect(input).toHaveValue("any_text");
+    expect(input).toHaveValue(text);
   });
   it("should upload a file on input type file", async () => {
     render(<Input />);

@@ -75,11 +75,12 @@ describe("Command", () => {
   it("should filter options by text", async () => {
     render(renderComponent());
 
+    const value = "Calendar";
     const input = screen.getByRole("combobox");
-    await userEvent.type(input, "Calendar");
+    await userEvent.type(input, value);
     const list = screen.getAllByRole("group");
 
-    expect(input).toHaveValue("Calendar");
+    expect(input).toHaveValue(value);
     expect(list).toHaveLength(1);
   });
 
