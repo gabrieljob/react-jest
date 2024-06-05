@@ -1,33 +1,28 @@
-# Projeto React com Jest e React Testing Library
+# React Project with Jest and React Testing Library
 
-Este projeto é um exemplo de utilização do React, Jest e React Testing Library para realizar testes automatizados em componentes React.
+This project is an example of using React, Jest, and React Testing Library to perform automated testing on React components.
 
 ![image](https://github.com/gabrieljob/react-jest/assets/45143271/8362ec0b-28a8-4066-b9da-5184fd1a5f03)
 
-## Descrição
-O objetivo deste projeto é demonstrar como utilizar o Jest e React Testing Library para escrever testes automatizados eficientes e confiáveis em componentes React. O React é uma biblioteca JavaScript amplamente utilizada para construir interfaces de usuário interativas, enquanto o Jest é um framework de testes desenvolvido pelo Facebook que fornece uma experiência de testes completa e poderosa. A React Testing Library é uma biblioteca de testes específica para o React que facilita a escrita de testes de componente.
-Neste projeto, você encontrará exemplos de testes unitários e de integração para diferentes componentes React. Os testes foram escritos seguindo as melhores práticas recomendadas pela comunidade, garantindo uma cobertura abrangente e precisa dos casos de teste.
+## Description
+The goal of this project is to demonstrate how to use Jest and React Testing Library to write efficient and reliable automated tests for React components. React is a widely used JavaScript library for building interactive user interfaces, while Jest is a testing framework developed by Facebook that provides a comprehensive and powerful testing experience. React Testing Library is a testing library specific to React that makes it easy to write component tests.
+In this project, you will find examples of unit tests and integration tests for different React components. The tests have been written following the best practices recommended by the community, ensuring comprehensive and accurate test coverage.
 
-## Recursos
-Testes unitários e de integração para componentes React
-Utilização do Jest como framework de testes
-Utilização da React Testing Library para facilitar a escrita de testes de componente
-Arquitetura modular e organizada
-Exemplos de testes para diferentes cenários e casos de uso
+## Features
+- Unit tests and integration tests for React components
+- Usage of Jest as the testing framework
+- Usage of React Testing Library to facilitate component testing
+- Modular and organized architecture
+- Examples of tests for different scenarios and use cases
 
-## Como executar os testes
+## How to Run the Tests
 Para executar os testes deste projeto, siga as etapas abaixo:
-1. Clone este repositório em sua máquina local.
-2. Certifique-se de ter o Node.js instalado em seu ambiente.
-3. Abra o terminal na pasta do projeto.
-4. Execute o comando npm install para instalar todas as dependências.
-5. Execute o comando npm test para iniciar a execução dos testes.
-6. Aguarde até que todos os testes sejam executados e verifique os resultados no terminal.
+1. Clone this repository to your local machine.
+2. Make sure you have Node.js installed in your environment.
+3. Make sure you have Node.js installed in your environment.
+4. Run the command npm install to install all dependencies.
+5. Run the command npm test to start running the tests.
+6. Wait for all the tests to be executed and check the results in the terminal.
 
-## Contribuição
-Se você deseja contribuir para este projeto, fique à vontade para abrir uma pull request com suas melhorias ou correções. Sua contribuição será muito apreciada!
-
-## Licença
-Este projeto está licenciado sob a MIT License.
-
-Espero que este projeto seja útil para você! Se tiver alguma dúvida ou sugestão, sinta-se à vontade para entrar em contato.
+## Contribution
+If you wish to contribute to this project, feel free to open a pull request with your improvements or fixes. Your contribution will be greatly appreciated!
